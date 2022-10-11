@@ -20,6 +20,13 @@ public class BookingService implements BookingServiceImpl {
 		// TODO Auto-generated method stub
 		return bookingRepository.findAll();
 	}
+	
+	@Override
+	public List<Booking> getBookingsByUserUserId(Long userId) {
+		// TODO Auto-generated method stub
+		return bookingRepository.getBookingsByUserUserId(userId);
+	}
+
 
 	
 }
