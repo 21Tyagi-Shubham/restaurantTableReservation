@@ -12,5 +12,5 @@ import com.project.tableReservation.entities.Booking;
 public interface BookingRepository extends JpaRepository<Booking, Long>{
 	 
 	List<Booking> findAll();
-	 	
+	List<Booking> getBookingsByUserUserId(Long userId); 	
 }
