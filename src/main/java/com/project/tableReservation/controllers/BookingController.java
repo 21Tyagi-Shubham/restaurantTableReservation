@@ -31,9 +31,9 @@ public class BookingController {
 		return bookingServiceImpl.findAll();
 	}
 
-    /*@PostMapping("/save")
-    public void saveBooking(@RequestBody Booking booking)
-    {
-    	bookingRepository.save(booking);
-    }*/
+      @GetMapping(value="/user/{userId}")
+    public List<Booking> getBookingsByUserUserId(@PathVariable Long userId){
+        return bookingServiceImpl.getBookingsByUserUserId(userId);
+    }
+	
 }
