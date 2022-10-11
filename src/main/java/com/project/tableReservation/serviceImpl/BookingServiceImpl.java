@@ -12,4 +12,5 @@ public interface BookingServiceImpl {
 	
 	
 	List<Booking> findAll();
+	List<Booking> getBookingsByUserUserId(Long userId);
 }
